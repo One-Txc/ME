@@ -52,3 +52,5 @@ github目录：
 Sublime git test content
 
 Sublime git test content 2
+
+copy add content

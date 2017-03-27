@@ -64,6 +64,27 @@ maven
 
 
 
+前台工具
+Typescript入门学习视频(需熟练):  http://www.imooc.com/learn/763
+Typescript手册：https://zhongsp.gitbooks.io/typescript-handbook/content/index.html
+
+Angular2 入门视频(需熟练)： http://www.imooc.com/learn/789
+Angular2 官方文档及案例:          https://angular.cn/docs/ts/latest/quickstart.html
+
+EJS模板(需熟练)：请自行查阅资料
+
+Webpack 学习视频(可选)：http://www.imooc.com/learn/802
+ 从下个项目开始实施前后端分离开发方案，像现在的爱多保开发一样。。前端将要学习的技术有(权重按先后顺序)：
+ 1.NodeJs(了解) 
+ 2.Npm(了解) 
+ 3.TypeScript(熟练) 
+ 4.Angular2(熟练) 
+ 5.EJS模板(熟练) 
+ 6.Webpack(可选)   
+  工具选用: WebStorm 或  VS Code  @全体成员 各位有时间请尽快学习。
+
+
+
 
 
 

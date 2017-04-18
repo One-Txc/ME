@@ -57,9 +57,18 @@ window-->linux 熟悉、迁移
 
 第二阶段：
 时间3.13-->4.13（计划）
-shiro
-redis
-maven
+shiro---完结
+redis---完结
+maven---过
+
+
+
+
+
+
+
+
+
 
 
 
@@ -82,6 +91,10 @@ Webpack 学习视频(可选)：http://www.imooc.com/learn/802
  5.EJS模板(熟练) 
  6.Webpack(可选)   
   工具选用: WebStorm 或  VS Code  @全体成员 各位有时间请尽快学习。
+
+
+ NIO模型理解
+ https://zhuanlan.zhihu.com/p/23488863
 
 
 

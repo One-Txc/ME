@@ -61,16 +61,14 @@ shiro---完结
 redis---完结
 maven---过
 
+第三阶段：
+ssm+velocity/beetle+shiro+maven+redis项目的结合搭建个环境（参照总监的）---完结
 
-
-
-
-
-
-
-
-
-
+下一步：
+0、再次看下：编程思想和并发编程和设计模式
+1、换电脑
+2、分布式,集群
+3、
 
 
 前台工具
@@ -95,10 +93,6 @@ Webpack 学习视频(可选)：http://www.imooc.com/learn/802
 
  NIO模型理解
  https://zhuanlan.zhihu.com/p/23488863
-
-
-
-
 
 
 

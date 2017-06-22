@@ -1,0 +1,59 @@
+操作符：
+++
+:
+!!
+Tuple(元组)
+数组操作
+head
+tail
+last
+init
+length
+null
+reverse
+take
+drop
+maximum
+minimum
+sum
+product
+elem
+
+
+Range
+cycle
+repeat
+replicate
+
+Tuple(元组)操作
+fst
+snd
+(这两个函数仅对序对有效，而不能应用于三元组，四元组和五元组之上)
+
+
+类型
+Int
+Integer
+Float
+Double
+Bool
+Char
+
+类型类
+Eq
+Ord
+Show
+Read
+Enum
+Bounded
+	ghci> minBound :: Int   
+	-2147483648   
+	ghci> maxBound :: Char   
+	'\1114111'   
+	ghci> maxBound :: Bool   
+	True   
+	ghci> minBound :: Bool  
+Num
+Integral
+Floating
+

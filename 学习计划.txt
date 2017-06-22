@@ -138,17 +138,16 @@ ssm+velocity/beetle+shiro+maven+redis项目的结合搭建个环境（参照总�
 4、消息队列---RabbitMQ,ZeroMQ
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+spring boot
+spring cloud
+	actuator	z
+	eureka		z
+	ribbon		
+	feign		
+	hystrix		
+	zuul		
+	sidecar		
+	config
+	bus
 
 

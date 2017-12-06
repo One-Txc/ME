@@ -1,0 +1,78 @@
+
+
+
+
+
+1. spring boot 项目的一般构建方式
+
+	a.添加parent。
+	<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.2.RELEASE</version>
+    </parent>
+    因为spring-boot-starter-parent中有依赖管理 dependency-management 标签，以便您可以省略子模块依赖关系的版本标签。
+    b.添加依赖
+    <dependencies>
+	    <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	    </dependency>
+	</dependencies>
+
+2. 打包成可以执行的jar。使用插件
+	<build>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.springframework.boot</groupId>
+	            <artifactId>spring-boot-maven-plugin</artifactId>
+	        </plugin>
+	    </plugins>
+	</build>
+
+3. 热部署，使用spring-boot-maven-plugin
+    <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+            <!--fork :  如果没有该项配置，肯呢个devtools不会起作用，即应用不会restart -->
+            <fork>true</fork>
+        </configuration>
+    </plugin>
+
+4. Maven用户可以从 spring-boot-starter-parent-parent 项目中继承，以获得合理的默认值。 父项目提供以下功能：
+	Java 1.6作为默认编译器级别。
+	源代码UTF-8编码。
+	依赖关系管理，允许您省略常见依赖的标签，其默认版本继承自spring-boot-dependencies POM。
+	更合理的资源过滤。
+	更合理的插件配置（exec plugin，surefire，Git commit ID，shade）。
+	针对application.properties和application.yml的更合理的资源过滤，包括特定的文件（例如application-foo.properties和application-foo.yml）
+	最后一点：由于默认的配置文件接受Spring样式占位符（${…}），Maven过滤更改为使用 @..@ 占位符（您可以使用Maven属性resource.delimiter覆盖它）。
+
+
+5. @SpringBootApplication
+	许多Spring Boot开发人员总是使用@Configuration，@EnableAutoConfiguration和@ComponentScan来标注它们的主类。 由于这些注解经常一起使用（特别是如果您遵循之前说的最佳实践），Spring Boot提供了一个方便的@SpringBootApplication注解作为这三个的替代方法。
+
+6. @ConfigurationProperties
+
+7. spring-boot-starter-actuator
+原生端点分为三大类：
+	应用配置类：获取应用程序中加载的应用配置、环境变量、自动化配置报告等与Spring Boot应用密切相关的配置类信息。
+	度量指标类：获取应用程序运行过程中用于监控的度量指标，比如：内存信息、线程池信息、HTTP请求统计等。
+	操作控制类：提供了对应用的关闭等操作类功能。
+
+应用配置类:
+	/autoconfig：该端点用来获取应用的自动化配置报告
+	/beans：该端点用来获取应用上下文中创建的所有Bean。
+	/configprops：该端点用来获取应用中配置的属性信息报告
+	/env：该端点与/configprops不同，它用来获取应用所有可用的环境属性报告。包括：环境变量、JVM属性、应用的配置配置、命令行中的参数。
+	/mappings：该端点用来返回所有Spring MVC的控制器映射关系报告
+	/info：该端点用来返回一些应用自定义的信息。
+度量指标类:
+	/metrics：该端点用来返回当前应用的各类重要度量指标，比如：内存信息、线程信息、垃圾回收信息等。
+	/metrics端点可以提供应用运行状态的完整度量指标报告
+	/health：该端点在一开始的示例中我们已经使用过了，它用来获取应用的各类健康指标信息。
+	/dump：该端点用来暴露程序运行中的线程信息。
+	/trace：该端点用来返回基本的HTTP跟踪信息
+操作控制类
+	/shutdown:只提供了一个用来关闭应用的端点

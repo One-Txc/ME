@@ -1,0 +1,12 @@
+
+静态资源和动态资源分离的优势？
+静态资源：
+	标准优化技术
+	资源变化
+	相应头：Last-Modified
+	请求头：If-Modified-Since
+
+
+	资源缓存
+	相应头：ETag
+	请求头：If-None-Match

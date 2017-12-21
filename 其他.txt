@@ -7,3 +7,5 @@ spring boot中文文档进度：
 	20.2.1 排除资源
 
 springBoot  20节Spring DevTools 介绍。感觉蛮有用的。可以多留意实践
+
+ubuntu图片处理软件：GIMP

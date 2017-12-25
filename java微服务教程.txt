@@ -10,3 +10,95 @@
 	资源缓存
 	相应头：ETag
 	请求头：If-None-Match
+
+
+Spring Boot REST
+	核心接口
+		定义相关
+			@Controller
+			@RestController
+		映射相关
+			@RequestMapping
+			@PathVariable
+		请求相关
+			@RequestParam
+			@RequestHeader
+			@CookieValue
+			RequestEntity
+		响应相关
+			@ResponseBody
+			ResponseEntity
+
+
+servlet
+Servlet 3.0 前时代
+服务组件
+	javax.servlet.Servlet
+	javax.servlet.Filter（since Servlet 2.3）
+上下文组件
+	javax.servlet.ServletContext
+	javax.servlet.http.HttpSession
+	javax.servlet.http.HttpServletRequest
+	javax.servlet.http.HttpServletResponse
+	javax.servlet.http.Cookie（客户端）
+配置
+	javax.servlet.ServletConfig
+	javax.servlet.FilterConfig（since Servlet 2.3 ）
+输入输出
+	javax.servlet.ServletInputStream
+	javax.servlet.ServletOutputStream
+异常
+	javax.servlet.ServletException
+事件（since Servlet 2.3 ）
+	生命周期类型
+		javax.servlet.ServletContextEvent
+		javax.servlet.http.HttpSessionEvent
+		java.servlet.ServletRequestEvent
+属性上下文类型
+	javax.servlet.ServletContextAttributeEvent
+	javax.servlet.http.HttpSessionBindingEvent
+	javax.servlet.ServletRequestAttributeEvent
+监听器（since Servlet 2.3）
+生命周期类型
+	javax.servlet.ServletContextListener
+	javax.servlet.http.HttpSessionListener
+	javax.servlet.http.HttpSessionActivationListener
+	javax.servlet.ServletRequestListener
+属性上下文类型
+	javax.servlet.ServletContextAttributeListener
+	javax.servlet.http.HttpSessionAttributeListener
+	javax.servlet.http.HttpSessionBindingListener
+	javax.servlet.ServletRequestAttributeListener
+
+
+
+Servlet 3.0 后时代
+组件申明注解
+	@javax.servlet.annotation.WebServlet
+	@javax.servlet.annotation.WebFilter
+	@javax.servlet.annotation.WebListener
+	@javax.servlet.annotation.ServletSecurity
+	@javax.servlet.annotation.HttpMethodConstraint
+	@javax.servlet.annotation.HttpConstraint
+配置申明
+	@javax.servlet.annotation.WebInitParam
+上下文
+	javax.servlet.AsyncContext
+事件
+	javax.servlet.AsyncEvent
+监听器
+	javax.servlet.AsyncListener
+Servlet 组件注册
+	javax.servlet.ServletContext#addServlet()
+	javax.servlet.ServletRegistration
+Filter 组件注册
+	javax.servlet.ServletContext#addFilter()
+	javax.servlet.FilterRegistration
+监听器注册
+	javax.servlet.ServletContext#addListener()
+	javax.servlet.AsyncListener
+自动装配
+初始器
+	javax.servlet.ServletContainerInitializer
+类型过滤
+	@javax.servlet.annotation.HandlesTypes

@@ -8,7 +8,6 @@ spring boot中文文档进度：
 
 springBoot  20节Spring DevTools 介绍。感觉蛮有用的。可以多留意实践
 
-<<<<<<< HEAD
 
 还是要啃书籍：
 thinking in java

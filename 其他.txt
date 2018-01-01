@@ -22,3 +22,7 @@ java虚拟机(需要一个整的时间段)
 
 ubuntu图片处理软件：GIMP
       流程图软件：谷歌插件：draw.io - 免费的流程图绘制工具
+
+谷歌插件：editThisCookies
+		JSON Viewer
+		Secure Shell

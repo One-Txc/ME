@@ -103,8 +103,35 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 6、克隆远程仓库
 git clone git@server:/srv/sample.git
 
-
 git remote add origin git@git.cs-n22.com:inner/sys-management-f.git
 
-
 git@localhost:inner/sys-management-f.git
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
